@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Airbnb Investments in Miami | Premium Property Picks</title>
+    <meta name="description" content="Get handpicked high-performing Miami Airbnb properties under $700K sent to your inbox weekly. Join 500+ successful investors.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0891b2;
+            --primary-dark: #0e7490;
+            --accent-color: #f59e0b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --border-radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        /* Background Elements */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.03;
+            background-image: 
+                radial-gradient(circle at 25% 25%, var(--primary-color) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, var(--accent-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--success-color), #059669);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .headline {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .headline .highlight {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subheadline {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-weight: 400;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        /* Main Content Card */
+        .main-card {
+            background: var(--bg-primary);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            position: relative;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .benefits-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .benefits {
+            display: grid;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .benefit-icon {
+            flex-shrink: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .benefit-content {
+            flex: 1;
+        }
+
+        .benefit-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .benefit-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Form Section */
+        .form-section {
+            position: relative;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .form-input.error,
+        .form-select.error {
+            border-color: #ef4444;
+            animation: shake 0.3s ease-in-out;
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .error-message.show {
+            opacity: 1;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            width: 100%;
+            padding: 1.25rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .cta-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .button-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid transparent;
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        /* Success Message */
+        .success-message {
+            background: linear-gradient(135deg, var(--success-color), #059669);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        .success-message.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        .footer-note {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.875rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Social Proof */
+        .social-proof {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .social-proof-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .investor-count {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .main-card {
+                padding: 1.5rem;
+            }
+
+            .benefits {
+                gap: 0.75rem;
+            }
+
+            .benefit-item {
+                padding: 0.75rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Utility Classes */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="trust-badge">
+                <i class="fas fa-star"></i>
+                <span>Trusted by 500+ Investors</span>
+            </div>
+            
+            <h1 class="headline">
+                Miami's <span class="highlight">Best Airbnb</span> Investment Properties Delivered Weekly
+            </h1>
+            
+            <p class="subheadline">
+                Stop endless scrolling through Zillow. Get handpicked, high-performing short-term rental properties under $700K in Miami's hottest neighborhoods, analyzed by local experts.
+            </p>
+        </header>
+
+        <div class="main-card">
+            <section class="benefits-section">
+                <h2 class="benefits-title">
+                    <i class="fas fa-chart-line"></i>
+                    Why Smart Investors Choose Our Picks
+                </h2>
+                
+                <ul class="benefits">
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <div class="benefit-title">Save 20+ Hours Weekly</div>
+                            <div class="benefit-description">No more endless Zillow scrolling. Our experts do the heavy lifting.</div>
+                        </div>
+                    </li>
+                    
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <div class="benefit-title">STR-Friendly Zones Only</div>
+                            <div class="benefit-description">Properties in areas where short-term rentals are permitted and thriving.</div>
+                        </div>
+                    </li>
+                    
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <div class="benefit-title">Pre-Analyzed Returns</div>
+                            <div class="benefit-description">Complete cash-on-cash analysis, occupancy projections, and market data.</div>
+                        </div>
+                    </li>
+                    
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <div class="benefit-title">High Walkability Scores</div>
+                            <div class="benefit-description">Prime locations near beaches, restaurants, and Miami attractions.</div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="form-section">
+                <h2 class="form-title">Get Your First Property List This Week</h2>
+                
+                <form id="investmentForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                class="form-input"
+                                required 
+                                autocomplete="given-name"
+                                placeholder="Enter your first name"
+                            >
+                            <div class="error-message" id="firstNameError">Please enter your first name</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input"
+                                required 
+                                autocomplete="email"
+                                placeholder="your@email.com"
+                            >
+                            <div class="error-message" id="emailError">Please enter a valid email address</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Investment Budget</label>
+                            <input 
+                                type="text" 
+                                id="budget" 
+                                name="budget" 
+                                class="form-input"
+                                required
+                                placeholder="e.g., $500,000"
+                            >
+                            <div class="error-message" id="budgetError">Please enter your investment budget</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline" class="form-label">Investment Timeline</label>
+                            <select id="timeline" name="timeline" class="form-select" required>
+                                <option value="" disabled selected>Select your timeline</option>
+                                <option value="asap">ASAP - Ready to buy</option>
+                                <option value="1-3-months">1–3 months</option>
+                                <option value="3-6-months">3–6 months</option>
+                                <option value="exploring">Just exploring options</option>
+                            </select>
+                            <div class="error-message" id="timelineError">Please select your timeline</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="realtor" class="form-label">Working with a realtor?</label>
+                            <select id="realtor" name="realtor" class="form-select" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="yes">Yes, I have a realtor</option>
+                                <option value="no">No, I need referrals</option>
+                                <option value="maybe">Open to recommendations</option>
+                            </select>
+                            <div class="error-message" id="realtorError">Please select an option</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="cta-button" id="submitBtn">
+                        <span class="button-content">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Me This Week's Properties</span>
+                        </span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle" style="margin-right: 0.5rem; font-size: 1.2rem;"></i>
+                    <strong>Welcome to the VIP list!</strong> You'll receive your first property recommendations within 24 hours.
+                </div>
+
+                <div class="social-proof">
+                    <div class="social-proof-text">Join successful investors already building wealth in Miami</div>
+                    <div class="investor-count">
+                        <i class="fas fa-users"></i>
+                        500+ Active Members • $50M+ in Properties Analyzed
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-note">
+                <p><i class="fas fa-shield-alt"></i> Your information is secure and will never be shared. Unsubscribe anytime.</p>
+                <p style="margin-top: 0.5rem; color: var(--text-light);">
+                    Weekly property alerts • Market insights • Exclusive deals
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Form validation and submission
+        document.getElementById('investmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const buttonContent = submitBtn.querySelector('.button-content');
+            const spinner = submitBtn.querySelector('.loading-spinner');
+            
+            // Reset previous errors
+            clearErrors();
+            
+            // Validate form
+            if (!validateForm()) {
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            buttonContent.style.display = 'none';
+            spinner.style.display = 'block';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Hide loading state
+                submitBtn.disabled = false;
+                buttonContent.style.display = 'flex';
+                spinner.style.display = 'none';
+                
+                // Hide form and show success message
+                form.style.display = 'none';
+                successMessage.classList.add('show');
+                
+                // Track conversion (placeholder for analytics)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        send_to: 'your-conversion-id'
+                    });
+                }
+            }, 2000);
+        });
+
+        function validateForm() {
+            let isValid = true;
+            
+            // Validate first name
+            const firstName = document.getElementById('firstName');
+            if (!firstName.value.trim()) {
+                showError('firstName', 'firstNameError');
+                isValid = false;
+            }
+            
+            // Validate email
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim() || !emailRegex.test(email.value)) {
+                showError('email', 'emailError');
+                isValid = false;
+            }
+            
+            // Validate budget
+            const budget = document.getElementById('budget');
+            if (!budget.value.trim()) {
+                showError('budget', 'budgetError');
+                isValid = false;
+            }
+            
+            // Validate timeline
+            const timeline = document.getElementById('timeline');
+            if (!timeline.value) {
+                showError('timeline', 'timelineError');
+                isValid = false;
+            }
+            
+            // Validate realtor
+            const realtor = document.getElementById('realtor');
+            if (!realtor.value) {
+                showError('realtor', 'realtorError');
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        function showError(fieldId, errorId) {
+            const field = document.getElementById(fieldId);
+            const error = document.getElementById(errorId);
+            
+            field.classList.add('error');
+            error.classList.add('show');
+            
+            // Remove error on input
+            field.addEventListener('input', function() {
+                field.classList.remove('error');
+                error.classList.remove('show');
+            }, { once: true });
+        }
+
+        function clearErrors() {
+            const errorInputs = document.querySelectorAll('.form-input.error, .form-select.error');
+            const errorMessages = document.querySelectorAll('.error-message.show');
+            
+            errorInputs.forEach(input => input.classList.remove('error'));
+            errorMessages.forEach(message => message.classList.remove('show'));
+        }
+
+        // Format budget input
+        document.getElementById('budget').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/[^\d]/g, '');
+            if (value) {
+                value = parseInt(value).toLocaleString();
+                e.target.value = '$' + value;
+            }
+        });
+
+        // Add smooth scroll for mobile
+        if (window.innerWidth <= 768) {
+            document.addEventListener('focusin', function(e) {
+                if (e.target.matches('input, select')) {
+                    setTimeout(() => {
+                        e.target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
